@@ -1,0 +1,131 @@
+.header-section {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 100%;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel {  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-item {
+  display: none;
+  position: relative;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.media-content {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.content-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 70px;
+  padding: 0 40px;
+}
+
+.text-content {
+  position: relative;
+  top: -250px;
+  margin-left: 70px;
+}
+
+.text-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.text-content p {
+  margin-top: 0.625rem;
+  font-size: 1.125rem;
+  color: black;
+}
+
+.buttons {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.learn-more {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.learn-more:hover {
+  color: gray;
+}
+
+.buy-now1 {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border-radius: 1.875rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-now1:hover {
+  background-color: #0056b3;
+}
+
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-button {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.nav-button.previous {
+  left: 0;
+}
+
+.nav-button.next {
+  right: 0;
+}

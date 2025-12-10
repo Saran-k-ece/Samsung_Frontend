@@ -1,0 +1,5 @@
+node_modules/
+dist/
+.vite/
+*.log
+package-lock-Saran_K_2004.json

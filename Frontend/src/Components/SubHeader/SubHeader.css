@@ -1,0 +1,886 @@
+/* General Styling */
+.sub-header-heading {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+.sub-header-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 750px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Left Container Styling */
+.sub-header-left-container {
+    background-color: #f4f4f4;
+    width: 700px;
+    height: 685px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.sub-header-left-container-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.sub-header-left-container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.sub-header-left-container-img img:hover {
+    transform: scale(1.1);
+}
+
+.sub-header-left-container-content {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.sub-header-left-container-content h1 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.sub-header-left-container-content button {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 35px;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.sub-header-left-container-content button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Grid Layout */
+.sub-head-right-container {
+    width: 700px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.box {
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.box:hover button {
+    display: block;
+}
+
+.box img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.box img:hover {
+    transform: translateY(-10px);
+}
+
+.box h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.box button {
+    background-color: black;
+    color: white;
+    width: 140px;
+    height: 35px;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+}
+
+.box button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Banner Section */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    background-color: #f4f4f4;
+    gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 24px;
+    flex-wrap: wrap;
+}
+
+.banner-image {
+    flex: 1;
+}
+
+.banner-image img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.banner-text {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 80px;
+}
+
+.banner-text h1 {
+    font-size: 54px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.banner-text p {
+    font-size: 24px;
+    margin: 0 15px;
+}
+
+.cta-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+/* Banner 2 Section */
+.banner-2 {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 600px;
+    background-color: #f4f4f4;
+    min-height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.banner-2 .box2 {
+    margin-top: -150px;
+    width: 300px;
+    min-height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.heart {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 90px;
+    margin-top: -5px;
+}
+
+.heart:hover {
+    color: red;
+}
+
+.banner-2 .box2 img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    object-fit: contain;
+}
+
+.banner-2 .box2 h3 {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background-color: #1ea3d7;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.banner-2 .box2 h2 {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.banner-2 .box2 p {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin: 15px 0;
+}
+
+/* Buy Now Button */
+.buy-now {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    margin-left: 70px;
+    border-radius: 20px;
+}
+
+.banner-2 .box2 .buy-now:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.buy-now:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.banner2-bottom {
+    margin-top: 800px;
+    position: absolute;
+    margin-right: 95px;
+   
+}
+
+.banner2-bottom button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* Rating */
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 16px;
+    color: #ffcc00;
+}
+
+.rating span {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #777;
+    margin-left: 5px;
+}
+
+/* Color Selection */
+.color-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-selection p {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.color-selection span {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.color-showing {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.color-showing button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+/* Banner-3 */
+.banner3-img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.banner3-img img {
+    margin-top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.image-content2 h1{
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 130px;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.image-content2 button
+{
+    position: absolute;
+    margin-top: -280px;
+    margin-left: 130px;
+    background-color: #000;
+    color: white;
+    width: 80px;
+    height: 50px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.box3-container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 900px;
+    background-color: rgb(244,244,244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    
+}
+
+
+.box3-container .box-3{
+    width: 300px;
+    min-height: 650px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease-in-out; 
+    
+    
+}
+
+.box-3 h1{
+    font-weight: 500;
+    font-size: 22px;
+}
+
+
+.box3-content h2{
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.banner3-bottom{
+    position: absolute;
+    margin-top: 780px;
+}
+
+.banner3-bottom button{
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 22px;
+    font-weight: 500;
+    margin-left: -30px;
+}
+
+
+/* Button Colouring */
+.color-showing .button1 button {
+    background-color: #7d7c7c;
+}
+
+.color-showing .button2 button {
+    background-color: navy;
+}
+
+.color-showing .button3 button {
+    background-color: pink;
+}
+
+.color-showing .button4 button {
+    background-color: #3373bc;
+}
+
+.color-showing .button5 button {
+    background-color: silver;
+}
+
+.color-showing .button6 button {
+    background-color: mediumseagreen;
+}
+
+.color-showing button:focus {
+    border: 2px dashed black;
+}
+
+.color-showing .button7 button {
+    background-color: gray;
+}
+
+.color-showing .button8 button {
+    background-color: rgb(47, 43, 43);
+}
+
+.color-showing .button9 button {
+    background-color:rgb(156, 43, 156);
+}
+
+.color-showing .button10 button {
+    background-color: rgb(223, 223, 22);
+}
+
+.color-showing .button12 button {
+    background-color:rgb(50, 43, 43);
+}
+
+.color-showing .button13 button {
+    background-color:  rgb(159, 12, 159);
+}
+
+.color-showing .button14 button {
+    background-color:  rgb(47, 43, 43);
+}
+
+
+.color-showing .button15 button {
+    background-color:  rgb(159, 12, 159);
+}
+
+.color-showing .button16 button {
+    background-color: rgb(171, 169, 169);
+}
+
+.color-showing .button16 button {
+    background-color: rgb(88, 176, 213);
+}
+
+.color-showing .button17 button {
+    background-color: rgb(13, 13, 82);
+}
+
+.color-showing .button18 button {
+    background-color: rgb(88, 176, 213);
+}
+
+.color-showing .button19 button {
+    background-color: rgb(13, 13, 82);
+}
+
+.color-showing .button16 button {
+    background-color: rgb(88, 176, 213);
+}
+
+.color-showing .button20 button {
+    background-color: pink;
+}
+
+.color-showing .button21 button {
+    background-color: lightgreen;
+}
+
+.color-showing .button22 button {
+    background-color: Black;
+}
+
+.color-showing .button23 button {
+    background-color: Violet;
+}
+
+.color-showing .button24 button {
+    background-color: Silver;
+}
+
+.color-showing .button25 button {
+    background-color: orange;
+}
+
+.color-showing .button26 button {
+    background-color: Silver;
+}
+
+.color-showing .button27 button {
+    background-color: white;
+}
+
+.color-showing .button28 button {
+    background-color: olive;
+}
+
+.color-showing .button29 button {
+    background-color: wheat;
+}
+
+.color-showing .button30 button {
+    background-color: silver;
+}
+
+.color-showing .button31 button {
+    background-color: wheat;
+}
+
+.color-showing .button32 button {
+    background-color: gray;
+}
+
+.color-showing .button33 button {
+    background-color: beige;
+}
+
+
+
+
+
+
+/* Banner-4 */
+
+.banner-4{
+ 
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.banner4-img img{
+   width: 1500px;
+   position: relative;
+ 
+}
+
+.banner4-img-content{
+      position: absolute;
+      margin-top: -490px;
+      margin-left: 110px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+}
+
+.banner4-img-content h1{
+    font-size:54px;
+    letter-spacing: 1.2;
+    font-weight: 500;
+}
+
+.banner4-img-content h4 {
+    font-size: 28px;
+}
+
+.banner4-img-content button
+{
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 22px;
+    font-weight: 500;
+}
+
+.banner4-box{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 1040px;
+    background-color: rgb(244,244,244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.banner4-box .box-4 {
+    width: 300px;
+    min-height: 780px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Dog {
+    margin-top: -20px;
+    position: absolute;
+    height: 780px; 
+    width: 100%;
+    border-radius: 10px;
+}
+
+.box-4-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 500px;
+    gap: 20px;
+
+}
+
+.dog-box-4-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 450px;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 22px;
+
+}
+
+
+.dog-box-4-content button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top:75px ;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.box-4 h1{
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+}
+
+.Saving{
+    margin-top: 10px;
+    display: flex;
+    gap: 4px;
+    margin-left: 36px;
+}
+
+.Saving .Saving1{
+    font-size: 15px;
+}
+
+.Saving .Saving2{
+    font-size: 15px;
+    color: skyblue;
+}
+
+.banner4-bottom button{
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 22px;
+    font-weight: 500;
+    margin-top: 450px;
+    margin-left: -700px
+}
+
+/* Banner - 5 */
+
+.banner-5 {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.banner5-img img {
+    margin-top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ 
+.banner5-img-content {
+    position: absolute;
+    margin-top: -480px;
+    margin-left: 800px;
+}
+
+.banner5-img-content h1 {
+    font-size: 58px;
+    font-weight: 600;
+}
+
+.banner5-img-content button {
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 22px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.box5-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 24px;
+    height: 1040px;
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.box-5 {
+    width: 300px;
+    min-height: 780px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box-5 h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.box5-top h3 {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background-color: #1ea3d7;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+
+
+.box-5btn {
+    position: absolute;
+    margin-top: 900px;
+    margin-right: 30px;
+    font-size: 16px;
+    background-color: transparent;
+    color: black;
+    border-radius: 30px;
+    padding: 5px;
+    font-weight: 500;
+    width: 110px;
+    height: 45px;
+    border: 1px solid black;
+}
+
+.banner-6 img{
+    width: 1650px;
+    margin-left: 20px;
+    padding: 0 24px;
+}
+
+
