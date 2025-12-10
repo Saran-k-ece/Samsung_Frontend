@@ -31,4 +31,25 @@ A modern, responsive **Samsung-inspired single page website** built using **Reac
 
 
 ## 📂 Project Structure
+src/
+│── assets/
+│ └── images & icons
+│── components/
+│ ├── Navbar/
+│ ├── Header/
+│ ├── SubHeader/
+│ └── Footer/
+│── App.jsx
+│── index.js
+└── styles
+
+## ⚙️ Installation & Setup
+
+```bash
+git clone https://github.com/your-username/samsung-single-page-website.git
+cd samsung-single-page-website
+npm install
+npm start
+
+
 
